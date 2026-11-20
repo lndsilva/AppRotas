@@ -24,6 +24,47 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
-        android:text="Voltar" />
+        android:text="Voltar"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FF5722"
+        android:text="Sobre"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConfiguracoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E91E63"
+        android:text="Configurações"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnProdutos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:backgroundTint="#8BC34A"
+        android:text="Produtos"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnVendas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Vendas"
+        android:textSize="24sp" />
 
 </LinearLayout>
