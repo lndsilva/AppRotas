@@ -12,7 +12,7 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MenuPrincipalActivity extends AppCompatActivity {
-    Button btnVoltar;
+    Button btnVoltar, btnSobre, btnConfiguracoes, btnProdutos, btnVendas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +25,48 @@ public class MenuPrincipalActivity extends AppCompatActivity {
             return insets;
         });
         btnVoltar = findViewById(R.id.btnVoltar);
+        btnSobre = findViewById(R.id.btnSobre);
+        btnConfiguracoes = findViewById(R.id.btnConfiguracoes);
+        btnProdutos = findViewById(R.id.btnProdutos);
+        btnVendas = findViewById(R.id.btnVendas);
+
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(),
                         LoginActivity.class));
+                finish();
+            }
+        });
+        btnSobre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),
+                        SobreActivity.class));
+                finish();
+            }
+        });
+        btnConfiguracoes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),
+                        ConfiguracoesActivity.class));
+                finish();
+            }
+        });
+        btnProdutos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),
+                        ProdutosActivity.class));
+                finish();
+            }
+        });
+        btnVendas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),
+                        VendasActivity.class));
                 finish();
             }
         });
